@@ -1,6 +1,7 @@
 package com.lx.todaysbing.data
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.lx.todaysbing.api.GalleryService
 import com.lx.todaysbing.data.opalapi.Image
 import java.lang.Exception
@@ -35,8 +36,8 @@ class GalleryPagingSource(
         }
     }
 
-//    override fun getRefreshKey(state: PagingState<Int, Photo>): Int? {
-//
-//    }
+    override fun getRefreshKey(state: PagingState<Int, Image>): Int? {
+        return state.anchorPosition
+    }
 
 }

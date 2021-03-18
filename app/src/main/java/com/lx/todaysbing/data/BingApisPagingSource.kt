@@ -1,6 +1,7 @@
 package com.lx.todaysbing.data
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.lx.todaysbing.api.BingApisService
 import com.lx.todaysbing.data.bingapis.Image
 
@@ -28,5 +29,9 @@ class BingApisPagingSource(
         } catch (exception: Exception) {
             LoadResult.Error(exception)
         }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, Image>): Int? {
+        return state.anchorPosition
     }
 }

@@ -3,6 +3,8 @@ Today's Bing
 
 An Image app show images of Microsoft Bing.
 
+[Today's Bing 1.0(1)](app/release/app-release.apk?raw=true)
+
 Introduction
 ------------
 

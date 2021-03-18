@@ -12,10 +12,15 @@ Introduction
 
 * Resources & Content reference from
   * Micorsoft Bing
-[Micorsoft Bing](https://www.bing.com/)
+  [Micorsoft Bing](https://www.bing.com/)
+  * Insider Pro
+  Windows 10 Phone App
+  Published by **DAONE**
+  Release date **4/23/2013**
+  [Insider Pro](https://www.microsoft.com/en-us/p/insider-pro/9wzdncrcws68?activetab=pivot:overviewtab)
   * Bing Wallpapers
-[Bing Wallpapers](https://play.google.com/store/apps/details?id=com.microsoft.bing.wallpapers&hl=en_US&gl=US)
-[Microsoft Corporation](https://play.google.com/store/apps/dev?id=6720847872553662727)
+  [Bing Wallpapers](https://play.google.com/store/apps/details?id=com.microsoft.bing.wallpapers&hl=en_US&gl=US)
+  [Microsoft Corporation](https://play.google.com/store/apps/dev?id=6720847872553662727)
 
 Getting Started
 ---------------

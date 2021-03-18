@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.content.Context" />
+
+        <import type="com.lx.todaysbing.data.bing.Image" />
+
+        <import type="com.lx.todaysbing.adapters.BingAdapters" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="image"
+            type="com.lx.todaysbing.data.bing.Image" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="@{clickListener}"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_photo_size_select_actual_24"
+                app:imageFromUrl="@{Image.getUrl(image)}"
+                app:layout_constraintDimensionRatio="3:2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <View
+                android:id="@+id/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/gradient"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@{Image.splitCopyRight(image.copyright)[0]}"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="莲叶" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:text="@{Image.splitCopyRight(image.copyright)[1]}"
+                android:textColor="#888"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view"
+                tools:text="\@ VIEW STOCK RF/Age FotoStock" />
+
+            <!--app:dayFromPosition="@{position}"-->
+            <TextView
+                android:id="@+id/tvNDaysAgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@{BingAdapters.dayFromPosition(context, position)}"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded"
+                tools:text="1 DAYS AGO" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

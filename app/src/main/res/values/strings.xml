@@ -1,0 +1,91 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="update">Update</string>
+    <string name="image_search">Image Search</string>
+
+    <string name="yestoday">YESTODAY</string>
+    <string name="days_ago">%1$d DAYS AGO</string>
+    <string name="app_name">Today\'s Bing</string>
+    <string name="category">Category</string>
+    <string name="color">Color</string>
+    <string name="country">Country</string>
+    <string name="filter">Filter</string>
+
+    <string-array name="market">
+        <item>United States</item>
+        <item>China</item>
+        <item>Japan</item>
+        <!--<item>Australia</item>-->
+        <!--<item>United Kingdom</item>-->
+        <item>Germany</item>
+        <!--<item>New Zealand</item>-->
+        <item>Canada</item>
+        <item>France</item>
+        <!--<item>Italy</item>-->
+        <!--<item>Poland</item>-->
+        <item>India</item>
+        <!--<item>Vietnam</item>-->
+        <!--<item>Thailand</item>-->
+        <!--<item>Korea</item>-->
+        <!--<item>Malaysia</item>-->
+        <!--<item>Portugal</item>-->
+        <!--<item>Spain</item>-->
+        <!--<item>Turkey</item>-->
+        <!--<item>Netherlands</item>-->
+        <!--<item>Hungary</item>-->
+        <!--<item>Brazil</item>-->
+        <!--<item>Russia</item>-->
+        <!--<item>Finland</item>-->
+    </string-array>
+
+    <string-array name="categories">
+        <item>Travel</item>
+        <item>Nature</item>
+        <item>Animal</item>
+        <item>Sports</item>
+        <item>Science</item>
+        <item>"Culture and Work"</item>
+        <item>Space</item>
+        <item>News</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Orange</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Brown</item>
+        <item>Black</item>
+        <item>Pink</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Purple</item>
+        <item>Multi</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>"Australia"</item>
+        <item>"United States"</item>
+        <item>"Iceland"</item>
+        <item>"China"</item>
+        <item>"United Kingdom"</item>
+        <item>"Canada"</item>
+        <item>"Italy"</item>
+        <item>"France"</item>
+        <item>"Germany"</item>
+        <item>"Japan"</item>
+        <item>"Norway"</item>
+        <item>"Spain"</item>
+        <item>"Unspecified"</item>
+    </string-array>
+
+    <string name="wallpaper_false">This image is copyright protected, cannot be set as wallpaper.</string>
+    <string name="wp_true">Download this image</string>
+    <string name="wp_false">This image is not available to download as wallpaper.</string>
+    <string name="download">download</string>
+    <string name="resolution">Resolution</string>
+    <string name="rotatable">Rotatable</string>
+</resources>

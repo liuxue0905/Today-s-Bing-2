@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/view_bing_detail_bottom">
+
+    <data>
+
+        <import type="com.lx.todaysbing.data.bing.Image" />
+
+        <variable
+            name="image"
+            type="com.lx.todaysbing.data.bing.Image" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_copyright"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <!--Download this image-->
+                <!--This image is not available to download as wallpaper.-->
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="@{image.wp}"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:text="@{image.wp ? @string/wp_true: @string/wp_false}"
+                    android:textColor="@drawable/wp_color_selector" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="@{Image.splitCopyRight(image.copyright)[0]}"
+                    android:textColor="@color/white"
+                    tools:text="Common rhododendrons in Semper Forest Park, Ruegen, Germany" />
+
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@{Image.splitCopyRight(image.copyright)[1]}"
+                    android:textColor="#aaa" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

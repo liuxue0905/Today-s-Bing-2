@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resolution" translatable="false">
+        <item>240x240</item>
+        <item>240x400</item>
+        <item>400x240</item>
+        <!--<item>958x512</item>-->
+        <item>480x800</item>
+        <item>720x1280</item>
+        <item>768x1280</item>
+        <item>1080x1920</item>
+        <item>1024x768</item>
+        <item>1280x720</item>
+        <item>1366x768</item>
+        <item>1920x1200</item>
+    </string-array>
+
+    <string-array name="mkt" translatable="false">
+        <item>en-US</item>
+        <item>zh-CN</item>
+        <item>ja-JP</item>
+        <!--<item>en-AU</item>-->
+        <!--<item>en-UK</item>-->
+        <item>de-DE</item>
+        <!--<item>en-NZ</item>-->
+        <item>en-CA</item>
+        <item>fr-FR</item>
+        <!--<item>it-IT</item>-->
+        <!--<item>pl-PL</item>-->
+        <item>en-IN</item>
+        <!--<item>vi-VN</item>-->
+        <!--<item>th-TH</item>-->
+        <!--<item>ko-KR</item>-->
+        <!--<item>ms-MY</item>-->
+        <!--<item>pt-PT</item>-->
+        <!--<item>es-ES</item>-->
+        <!--<item>tr-TR</item>-->
+        <!--<item>nl-NL</item>-->
+        <!--<item>hu-HU</item>-->
+        <!--<item>pt-BR</item>-->
+        <!--<item>ru-RU</item>-->
+        <!--<item>fi-FI</item>-->
+    </string-array>
+
+    <integer-array name="flags">
+        <!--Australia-->
+        <item>@drawable/au</item>
+        <!--United States-->
+        <item>@drawable/us</item>
+        <!--Iceland-->
+        <item>@drawable/is</item>
+        <!--China-->
+        <item>@drawable/cn</item>
+        <!--United Kingdom-->
+        <item>@drawable/gb</item>
+        <!--Canada-->
+        <item>@drawable/ca</item>
+        <!--Italy-->
+        <item>@drawable/it</item>
+        <!--France-->
+        <item>@drawable/fr</item>
+        <!--Germany-->
+        <item>@drawable/de</item>
+        <!--Japan-->
+        <item>@drawable/jp</item>
+        <!--Norway-->
+        <item>@drawable/no</item>
+        <!--Spain-->
+        <item>@drawable/es</item>
+        <!--Unspecified-->
+        <item>@null</item>
+    </integer-array>
+
+    <string-array name="categories_keys">
+        <item>Travel</item>
+        <item>Nature</item>
+        <item>Animal</item>
+        <item>Sports</item>
+        <item>Science</item>
+        <item>"Culture and Work"</item>
+        <item>Space</item>
+        <item>News</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <string-array name="colors_keys">
+        <item>Orange</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Brown</item>
+        <item>Black</item>
+        <item>Pink</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Purple</item>
+        <item>Multi</item>
+    </string-array>
+
+    <string-array name="countries_keys">
+        <item>"Australia"</item>
+        <item>"United States"</item>
+        <item>"Iceland"</item>
+        <item>"China"</item>
+        <item>"United Kingdom"</item>
+        <item>"Canada"</item>
+        <item>"Italy"</item>
+        <item>"France"</item>
+        <item>"Germany"</item>
+        <item>"Japan"</item>
+        <item>"Norway"</item>
+        <item>"Spain"</item>
+        <item>"Unspecified"</item>
+    </string-array>
+</resources>

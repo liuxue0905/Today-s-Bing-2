@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update">检查更新</string>
+    <string name="image_search">搜索图片</string>
+    <string name="yestoday">昨天</string>
+    <string name="days_ago">%1$d天前</string>
+    <string name="app_name">今日必应</string>
+    <string name="category">类别</string>
+    <string name="country">国家</string>
+    <string name="color">颜色</string>
+    <string name="filter">筛选</string>
+
+    <string-array name="market">
+        <item>美国</item>
+        <item>中国</item>
+        <item>日本</item>
+        <!--<item>澳大利亚</item>-->
+        <!--<item>英国</item>-->
+        <item>德国</item>
+        <!--<item>新西兰</item>-->
+        <item>加拿大</item>
+        <item>法国</item>
+        <!--<item>意大利</item>-->
+        <!--<item>波兰</item>-->
+        <item>印度</item>
+        <!--<item>越南</item>-->
+        <!--<item>泰国</item>-->
+        <!--<item>朝鲜</item>-->
+        <!--<item>马来西亚</item>-->
+        <!--<item>葡萄牙</item>-->
+        <!--<item>西班牙</item>-->
+        <!--<item>土耳其</item>-->
+        <!--<item>荷兰</item>-->
+        <!--<item>匈牙利</item>-->
+        <!--<item>巴西</item>-->
+        <!--<item>俄罗斯</item>-->
+        <!--<item>芬兰</item>-->
+    </string-array>
+
+    <string-array name="categories">
+        <item>旅行</item>
+        <item>自然</item>
+        <item>动物</item>
+        <item>运动</item>
+        <item>科学</item>
+        <item>"文化与工作"</item>
+        <item>太空</item>
+        <item>新闻</item>
+        <item>未指定</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>橙</item>
+        <item>蓝</item>
+        <item>黄</item>
+        <item>绿</item>
+        <item>棕</item>
+        <item>黑</item>
+        <item>粉</item>
+        <item>红</item>
+        <item>白</item>
+        <item>紫</item>
+        <item>多彩</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>"澳大利亚"</item>
+        <item>"美国"</item>
+        <item>"冰岛"</item>
+        <item>"中国"</item>
+        <item>"英国"</item>
+        <item>"加拿大"</item>
+        <item>"意大利"</item>
+        <item>"法国"</item>
+        <item>"德国"</item>
+        <item>"日本"</item>
+        <item>"挪威"</item>
+        <item>"西班牙"</item>
+        <item>"未指定"</item>
+    </string-array>
+    <string name="wallpaper_false">该图像受版权保护，不能设置为墙纸。</string>
+    <string name="wp_true">下载此图片</string>
+    <string name="wp_false">该图片不可作为壁纸下载。</string>
+    <string name="download">下载</string>
+    <string name="resolution">分辨率</string>
+    <string name="rotatable">可旋转</string>
+</resources>

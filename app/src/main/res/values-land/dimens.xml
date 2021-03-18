@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_today_gradient_h">160dp</dimen>
+    <dimen name="bing_detail_copyright_ph">18dp</dimen>
+</resources>

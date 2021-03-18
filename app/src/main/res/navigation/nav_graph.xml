@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.lx.todaysbing.fragment.ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_mktFragment"
+            app:destination="@id/mktFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_bingDetailFragment"
+            app:destination="@id/bingDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mktFragment"
+        android:name="com.lx.todaysbing.fragment.MktFragment"
+        android:label="MktFragment" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.lx.todaysbing.fragment.GalleryFragment"
+        android:label="GalleryFragment" >
+        <action
+            android:id="@+id/action_galleryFragment_to_galleryDetailFragment"
+            app:destination="@id/galleryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bingDetailFragment"
+        android:name="com.lx.todaysbing.fragment.BingDetailFragment"
+        android:label="BingDetailFragment" >
+        <argument
+            android:name="images"
+            app:argType="com.lx.todaysbing.data.bing.Image[]" />
+        <argument
+            android:name="image"
+            app:argType="com.lx.todaysbing.data.bing.Image" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryDetailFragment"
+        android:name="com.lx.todaysbing.fragment.GalleryDetailFragment"
+        android:label="GalleryDetailFragment" >
+        <argument
+            android:name="image"
+            app:argType="com.lx.todaysbing.data.opalapi.Image" />
+    </fragment>
+</navigation>

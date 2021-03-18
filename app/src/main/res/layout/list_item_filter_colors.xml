@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="text"
+            type="String" />
+    </data>
+
+    <com.google.android.material.chip.Chip
+        style="@style/Style.Chip.Colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{text}"
+        app:checkedIconTint="@color/white"
+        app:chipCornerRadius="1dp"
+        app:chipIcon="@android:color/transparent"
+        app:chipIconEnabled="true"
+        tools:text="text" />
+</layout>

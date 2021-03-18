@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+"#ec3836", "#f06d36", "#fbc43e"
+"#30b25c", "#269564", "#22b3e5"
+"#29619a", "#582e71", "#784196"
+
+  -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#ec3836" />
+        </shape>
+    </item>
+    <item android:left="18dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#f06d36" />
+        </shape>
+    </item>
+    <item android:left="36dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#fbc43e" />
+        </shape>
+    </item>
+
+    <item android:top="18dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#30b25c" />
+        </shape>
+    </item>
+    <item
+        android:left="18dp"
+        android:top="18dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#269564" />
+        </shape>
+    </item>
+    <item
+        android:left="36dp"
+        android:top="18dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#22b3e5" />
+        </shape>
+    </item>
+
+    <item android:top="36dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#29619a" />
+        </shape>
+    </item>
+    <item
+        android:left="18dp"
+        android:top="36dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#582e71" />
+        </shape>
+    </item>
+    <item
+        android:left="36dp"
+        android:top="36dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="18dp"
+                android:height="18dp" />
+            <solid android:color="#784196" />
+        </shape>
+    </item>
+</layer-list>

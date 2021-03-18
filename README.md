@@ -8,9 +8,9 @@ An Image app show images of Microsoft Bing.
 Introduction
 ------------
 
-* Language
-  * Chinese (zh)
-  * English (en)
+### Language
+* Chinese (zh)
+* English (en)
 
 ### Resources & Content reference from
 

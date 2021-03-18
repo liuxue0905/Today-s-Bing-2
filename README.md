@@ -25,8 +25,8 @@ Getting Started
 Screenshots
 -----------
 
-<img src="screenshots/bing_today.jpeg" alt="Today's Bing" title="Today's Bing" style="zoom:25%;" /><img src="screenshots/bing_n_days_ago.jpeg" alt="N Days Ago Bing" title="N Days Ago Bing" style="zoom:25%;" /><img src="screenshots/bing_detail.jpeg" alt="Detail Bing" title="Detail Bing" style="zoom:25%;" />
-<img src="screenshots/bing_gallery_list.jpeg" alt="Gallery List" title="Gallery List" style="zoom:25%;" /><img src="screenshots/bing_gallery_detail.jpeg" alt="Gallery Detail" title="Gallery Detail" style="zoom:25%;" />
+<img src="screenshots/bing_today.jpeg" alt="Today's Bing" title="Today's Bing" style="width:240px;" /><img src="screenshots/bing_n_days_ago.jpeg" alt="N Days Ago Bing" title="N Days Ago Bing" style="width:240px;" /><img src="screenshots/bing_detail.jpeg" alt="Detail Bing" title="Detail Bing" style="width:240px;" />
+<img src="screenshots/bing_gallery_list.jpeg" alt="Gallery List" title="Gallery List" style="width:240px;" /><img src="screenshots/bing_gallery_detail.jpeg" alt="Gallery Detail" title="Gallery Detail" style="width:240px;" />
 
 Libraries Used
 --------------

@@ -20,7 +20,7 @@ Introduction
 Getting Started
 ---------------
 
-[Today's Bing 1.0(1)](app/release/app-release.apk)    [DOWNLOAD](app/release/app-release.apk)
+[Today's Bing 1.0(1)](app/release/app-release.apk?raw=true)    [DOWNLOAD](app/release/app-release.apk?raw=true)
 
 Screenshots
 -----------

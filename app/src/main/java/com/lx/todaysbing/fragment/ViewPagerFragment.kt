@@ -30,17 +30,21 @@ class ViewPagerFragment : Fragment() {
 
     //    private val viewModel: BingViewModel by viewModels()
     private val viewModel: BingViewModel by activityViewModels()
-    val viewModelRecyclerViewScroll: RecyclerViewScrollViewModel by activityViewModels()
+    private val viewModelRecyclerViewScroll: RecyclerViewScrollViewModel by activityViewModels()
     private lateinit var adapter: BingPagerAdapter
+
+    private var binding: FragmentViewPagerBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        Log.d(TAG, "viewModel = ${viewModel}")
+        if (binding != null) return binding!!.root
 
         val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
         context ?: return binding.root
+
+        this.binding = binding
 
         val adapter = BingPagerAdapter()
         binding.viewPager.adapter = adapter
@@ -82,7 +86,6 @@ class ViewPagerFragment : Fragment() {
     }
 
 
-
     private fun subscribeUi(adapter: BingPagerAdapter, binding: FragmentViewPagerBinding) {
         viewModel.response.observe(viewLifecycleOwner) { response ->
 
@@ -91,7 +94,8 @@ class ViewPagerFragment : Fragment() {
             adapter.submitMkt(viewModel.getMkt())
             adapter.submitColor("#006AC1")
             adapter.submitList(response?.images)
-            binding.viewPager.currentItem = (adapter.count / 2) - ((adapter.count / 2) % adapter.realCount)
+            binding.viewPager.currentItem =
+                (adapter.count / 2) - ((adapter.count / 2) % adapter.realCount)
 
             viewModelRecyclerViewScroll.scrollToPositionWithOffset(0, 0)
         }
@@ -103,7 +107,8 @@ class ViewPagerFragment : Fragment() {
 
             binding.progressBar.isVisible = loadState is LoadState.Loading
             binding.viewPager.isVisible = loadState is LoadState.NotLoading
-            binding.retry.isVisible = loadState !is LoadState.Loading && loadState is LoadState.Error
+            binding.retry.isVisible =
+                loadState !is LoadState.Loading && loadState is LoadState.Error
         }
     }
 }

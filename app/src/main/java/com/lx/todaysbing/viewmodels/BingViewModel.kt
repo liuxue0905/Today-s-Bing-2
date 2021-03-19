@@ -11,6 +11,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import okhttp3.internal.notify
+import retrofit2.HttpException
 import javax.inject.Inject
 
 @HiltViewModel
@@ -47,6 +48,7 @@ class BingViewModel @Inject internal constructor(
                     _response.value = repository.getHPImageArchive(mkt = newMkt)
                     loadState.value = LoadState.NotLoading(true)
                 } catch (exception: Exception) {
+                    Log.d(TAG, "exception = $exception")
                     loadState.value = LoadState.Error(exception)
                 } finally {
                     Log.d(TAG, "loadState = $loadState")

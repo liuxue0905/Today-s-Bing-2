@@ -60,9 +60,7 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        if (binding != null) {
-            return binding!!.root
-        }
+        if (binding != null) return binding!!.root
 
         val binding = FragmentGalleryBinding.inflate(inflater, container, false)
         context ?: return binding.root

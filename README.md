@@ -55,6 +55,12 @@ Libraries Used
 [1]: https://github.com/flavioarfaria/KenBurnsView
 [2]: https://github.com/square/retrofit
 
+Upcoming features
+-----------------
+
+- Set Wallpaper
+- Image Viewer (pinch to zoom)
+
 License
 -------
 
